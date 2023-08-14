@@ -40,8 +40,8 @@
     </div>
 <script>
 
-const apiKey = "766e3d4c9ad839ab88a81b9a4f82ae5c";
-const apiUrl= "https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiKey = "2bd24060ceff26c39388b59acebe2c42";
+const apiUrl= "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox  = document.querySelector(".search input");
 const searchBtn  = document.querySelector(".search button");
@@ -50,7 +50,7 @@ const weatherIcon = document.querySelector(".weather-icon");
 
 
 async function checkWeather(city){
-    const reponse = await fetch(apiUrl + city + `&appid=${apiKey}` );
+    const response = await fetch(apiUrl + city + `&appid=${apiKey}` );
 
     if(Response.status == 404){
         document.querySelector(".error").style.display = "block";
@@ -58,7 +58,7 @@ async function checkWeather(city){
 
     }else{
 
-        var data = await Response.json();
+        var data = await response.json();
 
     document.querySelector(".city").innerHTML=data.name;
     document.querySelector(".temp").innerHTML= Math.round(data.main.temp) + "°c";
