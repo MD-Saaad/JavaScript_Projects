@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poopins", sans-serif;
+}
+
+body{
+
+    /* background-color: blanchedalmond; */
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 10%, rgba(209,178,212,1) 31%, rgba(187,181,220,1) 53%, rgba(171,183,225,1) 73%, rgba(148,187,233,1) 95%);
+}
+#head{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: black;
+    margin-top: 50px;
+    font-family: "Dancing script",sans-serif;
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container.hide{
+    display: none;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    height: 450px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    /* background-color: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(82,192,162,1) 22%, rgba(187,189,90,1) 70%, rgba(253,187,45,1) 100%); */
+    transition: 1.2s ;
+}
+
+.container:hover{
+    
+    transition: 1.2s;
+    box-shadow: rgba(0, 0, 0, 5) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} 
+
+.addnote{
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.195);
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    transition: 0.9s;
+}
+
+.addnote:hover{
+    transition: 0.9s;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.time{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.time h1{
+    color: aqua;
+    font-weight: 200;
+    font-size: 60px;
+}
+
+.time p{
+    color: gray;
+    font-size: 15px;
+}
+
+.current{
+    border-bottom: 1px solid gray;
+    margin: 0px 60px 0px 60px;
+}
+
+.posted{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    color: rgb(231, 221, 221);
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-color: gray;
+    position: relative;
+}
+
+.posted p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+.fa-delete-left{
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 10px;
+    right: 0;
+    color: aqua;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.fa-delete-left:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.note{
+    position: relative;
+}
+
+.fa-heart{
+    position: absolute;
+    margin-right: 40px;
+    margin-top: 10px;
+    right: 0;
+    color: aqua;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.fa-heart:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+.note.hide{
+    display: none;
+}
+
+.modal.hide{
+    display: none;
+}
+
+.modal{
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgb(223, 75, 75);
+    /* box-shadow: ; */
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+.modal textarea{
+    border-color: rgb(218, 23, 23);
+    text-indent: 5px;
+    background-color: rgb(230, 157, 157);
+    color: rgb(0, 0, 0);
+    outline: none;
+    width: 100%;
+    height: 80%;
+    border: none;
+}
+
+.modal button {
+    padding: 10px;
+    width: 100%;
+    border-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+
+}
+
+.modal button:hover{
+    transition: 0.5s;
+    background-color: greenyellow;
+    cursor: pointer;
+}
