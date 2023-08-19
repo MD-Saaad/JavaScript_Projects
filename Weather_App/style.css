@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,8 +9,19 @@
 }
 
 body{
+    
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(138,84,194,1) 37%, rgba(226,73,127,1) 93%, rgba(252,70,107,1) 100%);
+}
 
-    background: #222;
+#head1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: black;
+    margin-top: 6px;
+    font-family: "Dancing script",sans-serif;
+    font-size: 50px;
 }
 
 .card{
@@ -16,7 +30,7 @@ body{
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: wheat;
-    margin: 100px auto 0;
+    margin: 10px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
